@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      /><button type="submit">Search</button>
-    </form>
+    <section class="section">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </section>
     <div class="container">
       <div class="gallery">
-        <!-- Картки зображень -->
+        <!-- Img cards -->
       </div>
-      <button type="button" class="load-more">Load more</button>
+      <button type="button" class="load-more hidden">Load more</button>
     </div>
     <script src="./js/index.js" type="module"></script>
   </body>
