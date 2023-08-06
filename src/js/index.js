@@ -97,12 +97,12 @@ form.addEventListener('submit', onSubmit);
 loadMoreButton.addEventListener('click', onLoadMore);
 
 
-window.addEventListener('scroll', () => {
-  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-  if (scrollTop + clientHeight >= scrollHeight - 100) {
-    onLoadMore(); 
-  }
-});
+// window.addEventListener('scroll', () => {
+//   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+//   if (scrollTop + clientHeight >= scrollHeight - 100) {
+//     onLoadMore(); 
+//   }
+// });
 
 
 

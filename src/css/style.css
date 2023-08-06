@@ -1,102 +1,145 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #dbdfe7;
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
 a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .section {
-    position: fixed;
-    width: 100%;
-    padding: 20px 0;
-    background-color: rgb(224, 69, 22);
-    box-shadow: 0px 2px 5px -1px #a09696;
-    margin-top: -8px;
-    margin-left: -8px;
-  }
-  
-  .container {
-    padding: 60px 15px 15px 15px;
-    width: auto;
-    margin: 0 auto;
-  }
-  
-  .search-form {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    width: auto;
-  }
-  
-  .gallery {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: calc((100% - 50px) / 4);
-  }
-  
-  .thumb {
-    height: 180px;
-    width: 270px;
-  }
-  
-  .thumb > img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .photo-card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  
-  .info {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .info-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 13px;
-  }
-  
-  .load-more.hidden {
-    display: none;
-  }
-  
-  .load-more {
-    display: block;
-    width: 150px;
-    height: 50px;
-    margin: 30px auto;
-    color: white;
-    font-size: 18px;
-    background-color: rgb(219, 140, 21);
-    border-color: rgb(138, 184, 14);
-    border-radius: 51px;
-  }
-  
-  .load-more:hover {
-    cursor: pointer;
-    background-color: rgb(0, 105, 114);
-    border-color: rgb(0, 105, 114);
-  }
-  
-  .search-button {
-    cursor: pointer;
-  }
-  
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ffcc66;;
+  box-shadow: 0px 2px 5px -1px #a09696;
+  text-align: center;
+}
+.search-img {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.search-img::placeholder {
+  color: #ffcc66;
+}
+.search-img:focus {
+  border-color: #ffaa33;
+}
+.container {
+  padding: 60px 15px 15px 15px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 50px) / 4);
+}
+
+
+
+.photo-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0px 0px 4px 4px;
+}
+.search-button:hover {
+  background-color: #ff9900;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+
+
+.load-more {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 30px auto;
+  color: white;
+  font-size: 18px;
+  background-color: #ffaa33;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+ 
+}
+
+.load-more:hover {
+  background-color: #ff9900;
+}
+
+.search-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #ffaa33;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+  border: none;
+}
+.search-button:hover {
+  background-color: #ff9900;
+}
+
+.load-more.hidden {
+  display: none;
+}
+
+.thumb {
+  height: 180px;
+  width: 270px;
+}
+
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
