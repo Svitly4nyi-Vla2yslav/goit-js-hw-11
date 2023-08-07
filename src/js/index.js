@@ -12,6 +12,7 @@ let page = 1;
 
 async function onSubmit(evt) {
   evt.preventDefault();
+  page = 1;
   loadMoreButton.classList.add('hidden');
   gallery.innerHTML = '';
   const searchQuery = evt.currentTarget.elements.searchQuery.value.trim();
